@@ -1,0 +1,21 @@
+
+  <article>
+    <!-- <img class="listing-photo" [src]="/assets/human.png"
+      alt="Exterior photo of {{userInfo?.name}}"/>-->
+      <div id="container">
+    <section class="listing-description"> 
+      <h2 class="listing-heading"><b>Name: </b>{{userInfo?.name | uppercase}}</h2>
+      <h3 class="listing-heading"><b>Username: </b>{{userInfo?.username}}</h3>
+      <p class="listing-location"><b>Phone Number:</b>{{userInfo?.phone}}<br> <b>Website:</b> {{userInfo?.website}}</p>
+    </section> 
+    <section class="listing-features">
+      <h2 class="section-heading">More about the user detail</h2>
+      <ul>
+        <li><b>User Id:</b> {{userInfo?.id}}</li>
+        <li><b>Address:</b> {{userInfo?.address?.street}},{{userInfo?.address?.suite}},{{userInfo?.address?.city}}<br><b>Zipcode:</b> {{userInfo?.address?.zipcode}}<br><b>Latitude:</b> {{userInfo?.address?.geo?.lat}},<b>Longitude:</b> {{userInfo?.address?.geo?.lng}}</li>
+        <li><b>Company details: Name:</b> {{userInfo?.company?.name}},<br>{{userInfo?.company?.catchPhrase}},<br>{{userInfo?.company?.bs}}</li>
+      </ul>
+    </section>
+    </div>
+  </article>
+
